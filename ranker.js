@@ -20,3 +20,19 @@ function ranker(str) {
   
   return entities
 }
+
+function addRank(obj) {
+	let rank = 1;
+  
+	for (x of obj) {
+  	
+    if (!proposals.includes(x.p)) {
+    	rank = 1; 
+    	proposals.push(x.p)
+    } 
+    
+    x.rank = rank;
+      
+    rank++;
+  }
+}
