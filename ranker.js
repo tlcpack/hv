@@ -40,6 +40,8 @@ function addRank(obj) {
 
 let ents = ranker({user input});
 
+// test data I used: let ents = ranker('Sports,Football,100|Cafeteria,Lunch,450|Ski pass,No,20|Cafeteria,Lunch and Dinner,60|Cafeteria,Dinner,40|Ski pass,Yes,50|Ski pass,Optional,2000|Cafeteria,Breakfast,6|Sports,Baseball,1') 
+
 addRank(ents);
 
 for (e of ents) {
