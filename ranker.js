@@ -27,15 +27,15 @@ function addRank(obj) {
   
     for (x of obj) {
   	
-    	if (!proposals.includes(x.p)) {
+    	  if (!proposals.includes(x.p)) {
     		rank = 1; 
     		proposals.push(x.p)
-    	} 
+    	  } 
     
-    x.rank = rank;
+      x.rank = rank;
       
-    rank++;
-  }
+      rank++;
+    }
 }
 
 let ents = ranker({user input});
