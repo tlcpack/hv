@@ -22,14 +22,14 @@ function ranker(str) {
 }
 
 function addRank(obj) {
-	let rank = 1;
+    let rank = 1;
   
-	for (x of obj) {
+    for (x of obj) {
   	
-    if (!proposals.includes(x.p)) {
-    	rank = 1; 
-    	proposals.push(x.p)
-    } 
+    	if (!proposals.includes(x.p)) {
+    		rank = 1; 
+    		proposals.push(x.p)
+    	} 
     
     x.rank = rank;
       
