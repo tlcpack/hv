@@ -1,4 +1,5 @@
 let entities = []
+let proposals = []
 
 function Entity(p, o, v) {
   this.p = p;
@@ -35,4 +36,12 @@ function addRank(obj) {
       
     rank++;
   }
+}
+
+let ents = ranker({user input});
+
+addRank(ents);
+
+for (e of ents) {
+	console.log(e.p + ", " + e.rank + ", " + e.o)
 }
