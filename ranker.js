@@ -1,13 +1,13 @@
 let entities = []
 
 function Entity(p, o, v) {
-	this.p = p;
+  this.p = p;
   this.o = o;
   this.v = v;
 }
 
 function ranker(str) {
-	var section = str.split('|')
+  var section = str.split('|')
  
   for (let i = 0; i < section.length; i++ ) {
   	
